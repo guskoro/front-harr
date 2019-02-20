@@ -35,16 +35,16 @@ class Dashboard extends PureComponent {
   render() {
     const { avatar, username, dashboard, loading } = this.props
     const {
-      weather,
+      // weather,
       sales,
-      quote,
+      // quote,
       numbers,
-      recentSales,
-      comments,
-      completed,
-      browser,
-      cpu,
-      user,
+      // recentSales,
+      // comments,
+      // completed,
+      // browser,
+      // cpu,
+      // user,
     } = dashboard
 
     const numberCards = numbers.map((item, key) => (
@@ -105,7 +105,7 @@ class Dashboard extends PureComponent {
               </Col>
             </Row>
           </Col> */}
-          <Col lg={12} md={24}>
+          {/* <Col lg={12} md={24}>
             <Card bordered={false} {...bodyStyle}>
               <RecentSales data={recentSales} />
             </Card>
@@ -146,7 +146,7 @@ class Dashboard extends PureComponent {
             >
               <User {...user} avatar={avatar} username={username} />
             </Card>
-          </Col>
+          </Col> */}
         </Row>
       </Page>
     )

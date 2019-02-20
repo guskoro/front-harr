@@ -23,11 +23,6 @@ module.exports = {
         title: 'English',
         flag: '/america.svg',
       },
-      {
-        key: 'zh',
-        title: '中文',
-        flag: '/china.svg',
-      },
     ],
     defaultLanguage: 'en',
   },

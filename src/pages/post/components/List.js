@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Table, Avatar } from 'antd'
+import { Table } from 'antd'
 import { withI18n } from '@lingui/react'
 import { Ellipsis } from 'ant-design-pro'
 import styles from './List.less'
@@ -9,14 +9,26 @@ class List extends PureComponent {
   render() {
     const { i18n, ...tableProps } = this.props
     const columns = [
+      // {
+      //   title: i18n.t`Image`,
+      //   dataIndex: 'image',
+      //   render: text => <Avatar shape="square" src={text} />,
+      // },
       {
-        title: i18n.t`Image`,
-        dataIndex: 'image',
-        render: text => <Avatar shape="square" src={text} />,
+        title: i18n.t`Code`,
+        dataIndex: 'code',
       },
       {
-        title: i18n.t`Title`,
-        dataIndex: 'title',
+        title: i18n.t`Type`,
+        dataIndex: 'type',
+      },
+      {
+        title: i18n.t`Priority`,
+        dataIndex: 'priority',
+      },
+      {
+        title: i18n.t`Description`,
+        dataIndex: 'description',
         render: text => (
           <Ellipsis tooltip length={30}>
             {text}
@@ -24,32 +36,16 @@ class List extends PureComponent {
         ),
       },
       {
-        title: i18n.t`Author`,
-        dataIndex: 'author',
-      },
-      {
-        title: i18n.t`Categories`,
-        dataIndex: 'categories',
-      },
-      {
-        title: i18n.t`Tags`,
-        dataIndex: 'tags',
-      },
-      {
-        title: i18n.t`Visibility`,
-        dataIndex: 'visibility',
-      },
-      {
-        title: i18n.t`Comments`,
-        dataIndex: 'comments',
-      },
-      {
-        title: i18n.t`Views`,
-        dataIndex: 'views',
+        title: i18n.t`Assigned User`,
+        dataIndex: 'assign_user',
       },
       {
         title: i18n.t`Publish Date`,
         dataIndex: 'date',
+      },
+      {
+        title: i18n.t`Status`,
+        dataIndex: 'status',
       },
     ]
 

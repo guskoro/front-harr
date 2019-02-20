@@ -12,7 +12,7 @@ const { TabPane } = Tabs
 
 const EnumPostStatus = {
   UNPUBLISH: 1,
-  PUBLISHED: 2,
+  APPROVED: 2,
 }
 
 @withI18n()
@@ -52,21 +52,21 @@ class Post extends PureComponent {
       <Page inner>
         <Tabs
           activeKey={
-            query.status === String(EnumPostStatus.UNPUBLISH)
-              ? String(EnumPostStatus.UNPUBLISH)
-              : String(EnumPostStatus.PUBLISHED)
+            query.status === String(EnumPostStatus.PENDING)
+              ? String(EnumPostStatus.PENDING)
+              : String(EnumPostStatus.APPROVED)
           }
           onTabClick={handleTabClick}
         >
           <TabPane
-            tab={i18n.t`Publised`}
-            key={String(EnumPostStatus.PUBLISHED)}
+            tab={i18n.t`Approved`}
+            key={String(EnumPostStatus.APPROVED)}
           >
             <List {...listProps} />
           </TabPane>
           <TabPane
-            tab={i18n.t`Unpublished`}
-            key={String(EnumPostStatus.UNPUBLISH)}
+            tab={i18n.t`Pending`}
+            key={String(EnumPostStatus.PENDING)}
           >
             <List {...listProps} />
           </TabPane>

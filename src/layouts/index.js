@@ -3,13 +3,11 @@ import withRouter from 'umi/withRouter'
 import { LocaleProvider } from 'antd'
 import { I18nProvider } from '@lingui/react'
 import { langFromPath, defaultLanguage } from 'utils'
-import zh_CN from 'antd/lib/locale-provider/zh_CN'
 import en_US from 'antd/lib/locale-provider/en_US'
 
 import BaseLayout from './BaseLayout'
 
 const languages = {
-  zh: zh_CN,
   en: en_US,
 }
 
