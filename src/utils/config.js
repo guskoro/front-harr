@@ -1,7 +1,7 @@
 module.exports = {
-  siteName: 'AntD Admin',
-  copyright: 'Ant Design Admin  © 2018 zuiidea',
-  logoPath: '/logo.svg',
+  siteName: 'HARR Website',
+  copyright: 'Operasi Pemeliharaan dan Asset',
+  logoPath: '/logo_icon+.png',
   apiPrefix: '/api/v1',
   fixedHeader: true, // sticky primary layout header
 
