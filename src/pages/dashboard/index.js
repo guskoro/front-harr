@@ -60,7 +60,7 @@ class Dashboard extends PureComponent {
       >
         <Row gutter={24}>
           {numberCards}
-          <Col lg={18} md={24}>
+          <Col lg={24} md={24}>
             <Card
               bordered={false}
               bodyStyle={{
@@ -70,7 +70,7 @@ class Dashboard extends PureComponent {
               <Sales data={sales} />
             </Card>
           </Col>
-          <Col lg={6} md={24}>
+          {/* <Col lg={6} md={24}>
             <Row gutter={24}>
               <Col lg={24} md={12}>
                 <Card
@@ -104,7 +104,7 @@ class Dashboard extends PureComponent {
                 </Card>
               </Col>
             </Row>
-          </Col>
+          </Col> */}
           <Col lg={12} md={24}>
             <Card bordered={false} {...bodyStyle}>
               <RecentSales data={recentSales} />

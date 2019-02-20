@@ -86,6 +86,7 @@ const Dashboard = Mock.mock({
       },
     },
   ],
+
   'recentSales|36': [
     {
       'id|+1': 1,
@@ -111,25 +112,25 @@ const Dashboard = Mock.mock({
     {
       icon: 'pay-circle-o',
       color: Color.green,
-      title: 'Online Review',
+      title: 'Corrective Maintenance',
       number: 2781,
     },
     {
       icon: 'team',
       color: Color.blue,
-      title: 'New Customers',
+      title: 'Preventive Maintenance',
       number: 3241,
     },
     {
-      icon: 'message',
+      icon: 'shopping-cart',
       color: Color.purple,
-      title: 'Active Projects',
+      title: 'Assets',
       number: 253,
     },
     {
       icon: 'shopping-cart',
       color: Color.red,
-      title: 'Referrals',
+      title: 'Penertiban',
       number: 4324,
     },
   ],
